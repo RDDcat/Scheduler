@@ -3,8 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+<<<<<<< HEAD
         <entry key="..\:/Users/User/Desktop/TY/Pr_schedule/Scheduler/app/src/main/res/layout/activity_calendar.xml" value="0.5" />
         <entry key="..\:/Users/User/Desktop/TY/Pr_schedule/Scheduler/app/src/main/res/layout/activity_main.xml" value="0.36614583333333334" />
+=======
+        <entry key="..\:/GIT/Schedule/Scheduler/app/src/main/res/layout/activity_add_calendar.xml" value="0.35190217391304346" />
+        <entry key="..\:/GIT/Schedule/Scheduler/app/src/main/res/layout/activity_calendar.xml" value="0.2046875" />
+        <entry key="..\:/GIT/Schedule/Scheduler/app/src/main/res/layout/activity_diary_list.xml" value="0.2046875" />
+        <entry key="..\:/GIT/Schedule/Scheduler/app/src/main/res/layout/activity_emotion_diary.xml" value="0.2046875" />
+        <entry key="..\:/GIT/Schedule/Scheduler/app/src/main/res/layout/activity_main.xml" value="0.35190217391304346" />
+        <entry key="..\:/GIT/Schedule/Scheduler/app/src/main/res/layout/activity_setting.xml" value="0.2046875" />
+        <entry key="..\:/GIT/Schedule/Scheduler/app/src/main/res/layout/activity_to_do_list.xml" value="0.2046875" />
+>>>>>>> ca2e40e993d71135d8dea33c8abc06e8d1f2768e
       </map>
     </option>
   </component>

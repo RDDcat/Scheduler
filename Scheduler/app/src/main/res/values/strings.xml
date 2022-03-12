@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Scheduler</string>
+    <string name="buttonHome">홈</string>
 </resources>
