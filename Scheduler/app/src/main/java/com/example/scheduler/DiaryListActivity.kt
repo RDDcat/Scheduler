@@ -1,5 +1,6 @@
 package com.example.scheduler
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
@@ -11,9 +12,18 @@ class DiaryListActivity : AppCompatActivity() {
 
 
         var buttonMain = findViewById<Button>(R.id.buttonMain)
+        var buttonSwitch = findViewById<Button>(R.id.buttonSwitch)
+
 
         buttonMain.setOnClickListener {
             finish()
         }
+
+        buttonSwitch.setOnClickListener {
+            val intent = Intent(this, DiaryCalendarListActivity::class.java)
+            finish()
+            startActivity(intent)
+        }
+
     }
 }
