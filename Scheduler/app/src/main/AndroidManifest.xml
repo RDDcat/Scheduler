@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Scheduler">
         <activity
+            android:name=".DiaryCalendarListActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AddDiaryActivity"
+            android:exported="true" />
+        <activity
             android:name=".EmotionDiaryActivity"
             android:exported="true" />
         <activity
