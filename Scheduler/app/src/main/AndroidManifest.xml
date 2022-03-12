@@ -10,6 +10,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Scheduler">
         <activity
+            android:name=".EmotionDiaryActivity"
+            android:exported="true" />
+        <activity
+            android:name=".DiaryListActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AddCalendarActivity"
+            android:exported="true" />
+        <activity
+            android:name=".CalendarActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SettingActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ToDoListActivity"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
