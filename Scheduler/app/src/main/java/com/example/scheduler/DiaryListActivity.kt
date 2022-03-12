@@ -1,9 +1,8 @@
 package com.example.scheduler
 
-import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
 
 class DiaryListActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,8 +13,7 @@ class DiaryListActivity : AppCompatActivity() {
         var buttonMain = findViewById<Button>(R.id.buttonMain)
 
         buttonMain.setOnClickListener {
-            var intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
+            finish()
         }
     }
 }
