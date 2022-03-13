@@ -13,6 +13,7 @@ class DiaryListActivity : AppCompatActivity() {
 
         var buttonMain = findViewById<Button>(R.id.buttonMain)
         var buttonSwitch = findViewById<Button>(R.id.buttonSwitch)
+        var buttonAddDiary = findViewById<Button>(R.id.buttonAddDiary)
 
 
         buttonMain.setOnClickListener {
@@ -22,6 +23,11 @@ class DiaryListActivity : AppCompatActivity() {
         buttonSwitch.setOnClickListener {
             val intent = Intent(this, DiaryCalendarListActivity::class.java)
             finish()
+            startActivity(intent)
+        }
+
+        buttonAddDiary.setOnClickListener {
+            val intent = Intent(this, AddDiaryActivity::class.java)
             startActivity(intent)
         }
 
