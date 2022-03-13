@@ -46,5 +46,9 @@ class MainActivity : AppCompatActivity() {
         button.setOnClickListener {
             Toast.makeText(applicationContext, "공유하기", Toast.LENGTH_SHORT).show()
         }
+        button = findViewById(R.id.button8)
+        button.setOnClickListener {
+            Toast.makeText(applicationContext, "메뉴", Toast.LENGTH_SHORT).show()
+        }
     }
 }
