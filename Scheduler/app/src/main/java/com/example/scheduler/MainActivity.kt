@@ -12,41 +12,41 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        button = findViewById(R.id.button1)
+        button = findViewById(R.id.CalendarButton)
         button.setOnClickListener {
             val mtocIntent = Intent(this, CalendarActivity::class.java)
             startActivity(mtocIntent)
         }
-        button = findViewById(R.id.button2)
+        button = findViewById(R.id.DiaryListButton)
         button.setOnClickListener {
             val mtodlIntent = Intent(this, DiaryListActivity::class.java)
             startActivity(mtodlIntent)
         }
-        button = findViewById(R.id.button3)
-        button.setOnClickListener {
-            val mtotdlIntent = Intent(this, ToDoListActivity::class.java)
-            startActivity(mtotdlIntent)
-        }
-        button = findViewById(R.id.button4)
+        button = findViewById(R.id.AddCalendarButton)
         button.setOnClickListener {
             val mtoacIntent = Intent(this, AddCalendarActivity::class.java)
             startActivity(mtoacIntent)
         }
-        button = findViewById(R.id.button5)
+        button = findViewById(R.id.SettingButton)
         button.setOnClickListener {
             val mtosIntent = Intent(this, SettingActivity::class.java)
             startActivity(mtosIntent)
         }
-        button = findViewById(R.id.button6)
+        button = findViewById(R.id.ToDoListButton)
+        button.setOnClickListener {
+            val mtotdlIntent = Intent(this, ToDoListActivity::class.java)
+            startActivity(mtotdlIntent)
+        }
+        button = findViewById(R.id.EmotionDiaryButton)
         button.setOnClickListener {
             val mtoedIntent = Intent(this, EmotionDiaryActivity::class.java)
             startActivity(mtoedIntent)
         }
-        button = findViewById(R.id.button7)
+        button = findViewById(R.id.ShareButton)
         button.setOnClickListener {
             Toast.makeText(applicationContext, "공유하기", Toast.LENGTH_SHORT).show()
         }
-        button = findViewById(R.id.button8)
+        button = findViewById(R.id.MenuButton)
         button.setOnClickListener {
             Toast.makeText(applicationContext, "메뉴", Toast.LENGTH_SHORT).show()
         }
