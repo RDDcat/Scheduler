@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Scheduler">
         <activity
+            android:name=".MenuPopup"
+            android:exported="false" />
+        <activity
             android:name=".DiaryCalendarListActivity"
             android:exported="true" />
         <activity
