@@ -6,6 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".EmotionDiaryActivity">
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="307dp"
+        android:layout_marginBottom="405dp"
+        android:text="EmotionDiary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
     <Button
         android:id="@+id/buttonMain"
         android:layout_width="wrap_content"

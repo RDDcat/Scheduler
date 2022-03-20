@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/CalendarButton"
         android:layout_width="78dp"
         android:layout_height="50dp"
         android:text="MtoC"
@@ -19,7 +19,7 @@
         app:layout_constraintVertical_bias="0.113" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/DiaryListButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="MtoDL"
@@ -31,43 +31,45 @@
         app:layout_constraintVertical_bias="0.235" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/AddCalendarButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="MtoAC"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.969"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.455" />
+        app:layout_constraintVertical_bias="0.243" />
+
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/SettingButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="MtoS"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.972"
+        app:layout_constraintHorizontal_bias="0.479"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.585" />
+        app:layout_constraintVertical_bias="0.338" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/ToDoListButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="MtoTDL"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.99"
+        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.339" />
+        app:layout_constraintVertical_bias="0.452" />
+
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/EmotionDiaryButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="MtoED"
@@ -79,19 +81,20 @@
         app:layout_constraintVertical_bias="0.729" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/ShareButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="share"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.972"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.859" />
+        app:layout_constraintVertical_bias="0.683" />
+
 
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/MenuButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Menu"
