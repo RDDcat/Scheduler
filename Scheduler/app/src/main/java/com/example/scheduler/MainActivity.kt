@@ -16,44 +16,50 @@ class MainActivity : AppCompatActivity() {
 
         button = findViewById(R.id.MenuButton)
         button.setOnClickListener {
-            Toast.makeText(applicationContext, "메뉴", Toast.LENGTH_SHORT).show()
             val popupView = LayoutInflater.from(this).inflate(R.layout.menu_popup, null)
             val mBuilder = AlertDialog.Builder(this).setView(popupView)
 
-            mBuilder.show()
+            val mAlertDialog = mBuilder.show()
             val mtocButton = popupView.findViewById<Button>(R.id.CalendarButton)
             mtocButton.setOnClickListener {
                 val mtocIntent = Intent(this, CalendarActivity::class.java)
                 startActivity(mtocIntent)
+                mAlertDialog.dismiss()
             }
             val mtodButton = popupView.findViewById<Button>(R.id.DiaryListButton)
             mtodButton.setOnClickListener {
                 val mtodlIntent = Intent(this, DiaryListActivity::class.java)
                 startActivity(mtodlIntent)
+                mAlertDialog.dismiss()
             }
             val mtoacButton = popupView.findViewById<Button>(R.id.AddCalendarButton)
             mtoacButton.setOnClickListener {
                 val mtoacIntent = Intent(this, AddCalendarActivity::class.java)
                 startActivity(mtoacIntent)
+                mAlertDialog.dismiss()
             }
             val mtosButton = popupView.findViewById<Button>(R.id.SettingButton)
             mtosButton.setOnClickListener {
                 val mtosIntent = Intent(this, SettingActivity::class.java)
                 startActivity(mtosIntent)
+                mAlertDialog.dismiss()
             }
             val mtotdButton = popupView.findViewById<Button>(R.id.ToDoListButton)
             mtotdButton.setOnClickListener {
                 val mtotdlIntent = Intent(this, ToDoListActivity::class.java)
                 startActivity(mtotdlIntent)
+                mAlertDialog.dismiss()
             }
             val mtoedButton = popupView.findViewById<Button>(R.id.EmotionDiaryButton)
             mtoedButton.setOnClickListener {
                 val mtoedIntent = Intent(this, EmotionDiaryActivity::class.java)
                 startActivity(mtoedIntent)
+                mAlertDialog.dismiss()
             }
             val shareButton = popupView.findViewById<Button>(R.id.ShareButton)
             shareButton.setOnClickListener {
                 Toast.makeText(applicationContext, "공유하기", Toast.LENGTH_SHORT).show()
+                mAlertDialog.dismiss()
             }
         }
     }
