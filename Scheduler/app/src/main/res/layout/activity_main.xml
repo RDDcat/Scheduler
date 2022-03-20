@@ -13,10 +13,10 @@
         android:text="MtoC"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintHorizontal_bias="0.969"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.038" />
+        app:layout_constraintVertical_bias="0.113" />
 
     <Button
         android:id="@+id/button2"
@@ -25,10 +25,10 @@
         android:text="MtoDL"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintHorizontal_bias="0.972"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.152" />
+        app:layout_constraintVertical_bias="0.235" />
 
     <Button
         android:id="@+id/button3"
@@ -37,10 +37,10 @@
         android:text="MtoAC"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintHorizontal_bias="0.969"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.361" />
+        app:layout_constraintVertical_bias="0.455" />
 
     <Button
         android:id="@+id/button4"
@@ -49,10 +49,10 @@
         android:text="MtoS"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintHorizontal_bias="0.972"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.459" />
+        app:layout_constraintVertical_bias="0.585" />
 
     <Button
         android:id="@+id/button5"
@@ -61,9 +61,10 @@
         android:text="MtoTDL"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.99"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.256" />
+        app:layout_constraintVertical_bias="0.339" />
 
     <Button
         android:id="@+id/button6"
@@ -72,10 +73,10 @@
         android:text="MtoED"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintHorizontal_bias="0.972"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.566" />
+        app:layout_constraintVertical_bias="0.729" />
 
     <Button
         android:id="@+id/button7"
@@ -84,10 +85,10 @@
         android:text="share"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.479"
+        app:layout_constraintHorizontal_bias="0.972"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.688" />
+        app:layout_constraintVertical_bias="0.859" />
 
     <Button
         android:id="@+id/button8"
@@ -99,6 +100,6 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.04" />
+        app:layout_constraintVertical_bias="0.023" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
