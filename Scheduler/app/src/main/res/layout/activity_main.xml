@@ -82,17 +82,54 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="109dp"
-        android:layout_height="130dp"
+        android:layout_width="95dp"
+        android:layout_height="100dp"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="592dp"
-        android:background="@drawable/post_it"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.99">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="todo1" />
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img_post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/post_it" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+                <TableRow>
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_margin="2dp"
+                        android:src="@drawable/pen"/>
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_margin="2dp"
+                        android:src="@drawable/exercise"/>
+                </TableRow>
+                <TableRow>
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_margin="2dp"
+                        android:src="@drawable/pen"/>
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_margin="2dp"
+                        android:src="@drawable/exercise"/>
+                </TableRow>
+            </TableLayout>
+        </FrameLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

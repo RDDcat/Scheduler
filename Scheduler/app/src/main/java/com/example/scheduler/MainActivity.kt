@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.*
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -65,6 +66,12 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(applicationContext, "공유하기", Toast.LENGTH_SHORT).show()
                 linear.visibility = View.GONE
             }
+        }
+
+        var postit = findViewById<ImageView>(R.id.img_post)
+        postit.setOnClickListener {
+            var intent = Intent(applicationContext,ToDoListActivity::class.java)
+            startActivity(intent)
         }
     }
 }
