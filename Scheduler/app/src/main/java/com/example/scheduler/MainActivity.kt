@@ -21,11 +21,11 @@ class MainActivity : AppCompatActivity() {
         button.setOnClickListener {
             if(hideMenu.isVisible){
                 hideMenu.visibility = View.GONE
-                button.setText("menu")
+                button.setBackgroundResource(R.drawable.menu)
             }
             else {
                 hideMenu.visibility = View.VISIBLE
-                button.setText("close")
+                button.setBackgroundResource(R.drawable.simplex)
             }
             val mtocButton = findViewById<Button>(R.id.CalendarButton)
             mtocButton.setOnClickListener {
