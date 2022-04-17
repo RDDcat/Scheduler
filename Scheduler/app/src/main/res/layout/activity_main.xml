@@ -9,10 +9,10 @@
 
     <LinearLayout
         android:id="@+id/layoutMenu"
-        android:layout_width="wrap_content"
+        android:layout_width="50dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="1dp"
+        android:layout_marginEnd="10dp"
         android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
@@ -38,42 +38,42 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:text="MtoC" />
+                android:text="C" />
 
             <Button
                 android:id="@+id/AddCalendarButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:text="MtoAC" />
+                android:text="AC" />
 
             <Button
                 android:id="@+id/ToDoListButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:text="MtoTDL" />
+                android:text="TDL" />
 
             <Button
                 android:id="@+id/DiaryListButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:text="MtoDL" />
+                android:text="DL" />
 
             <Button
                 android:id="@+id/EmotionDiaryButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:text="MtoED" />
+                android:text="ED" />
 
             <Button
                 android:id="@+id/SettingButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:text="MtoS" />
+                android:text="S" />
 
             <Button
                 android:id="@+id/ShareButton"
