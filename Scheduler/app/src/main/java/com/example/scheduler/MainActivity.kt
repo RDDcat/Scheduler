@@ -35,41 +35,48 @@ class MainActivity : AppCompatActivity() {
                 val mtocIntent = Intent(this, CalendarActivity::class.java)
                 startActivity(mtocIntent)
                 hideMenu.visibility = View.GONE
+                button.setBackgroundResource(R.drawable.menu)
             }
             val mtodButton = findViewById<Button>(R.id.DiaryListButton)
             mtodButton.setOnClickListener {
                 val mtodlIntent = Intent(this, DiaryListActivity::class.java)
                 startActivity(mtodlIntent)
                 hideMenu.visibility = View.GONE
+                button.setBackgroundResource(R.drawable.menu)
             }
             val mtoacButton = findViewById<Button>(R.id.AddCalendarButton)
             mtoacButton.setOnClickListener {
                 val mtoacIntent = Intent(this, AddCalendarActivity::class.java)
                 startActivity(mtoacIntent)
                 hideMenu.visibility = View.GONE
+                button.setBackgroundResource(R.drawable.menu)
             }
             val mtosButton = findViewById<Button>(R.id.SettingButton)
             mtosButton.setOnClickListener {
                 val mtosIntent = Intent(this, SettingActivity::class.java)
                 startActivity(mtosIntent)
                 hideMenu.visibility = View.GONE
+                button.setBackgroundResource(R.drawable.menu)
             }
             val mtotdButton = findViewById<Button>(R.id.ToDoListButton)
             mtotdButton.setOnClickListener {
                 val mtotdlIntent = Intent(this, ToDoListActivity::class.java)
                 startActivity(mtotdlIntent)
                 hideMenu.visibility = View.GONE
+                button.setBackgroundResource(R.drawable.menu)
             }
             val mtoedButton = findViewById<Button>(R.id.EmotionDiaryButton)
             mtoedButton.setOnClickListener {
                 val mtoedIntent = Intent(this, EmotionDiaryActivity::class.java)
                 startActivity(mtoedIntent)
                 hideMenu.visibility = View.GONE
+                button.setBackgroundResource(R.drawable.menu)
             }
             val shareButton = findViewById<Button>(R.id.ShareButton)
             shareButton.setOnClickListener {
                 Toast.makeText(applicationContext, "공유하기", Toast.LENGTH_SHORT).show()
                 hideMenu.visibility = View.GONE
+                button.setBackgroundResource(R.drawable.menu)
             }
         }
 
