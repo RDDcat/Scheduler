@@ -6,134 +6,449 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
-    <LinearLayout
-        android:id="@+id/layoutMenu"
-        android:layout_width="50dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="10dp"
-        android:gravity="center"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <Button
-            android:id="@+id/MenuButton"
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <HorizontalScrollView
+            android:id="@+id/scrollView"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:background="@drawable/menu" />
-
-        <LinearLayout
-            android:id="@+id/layoutHideMenu"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="#918F8F"
-            android:orientation="vertical"
-            android:visibility="gone">
-
-            <Button
-                android:id="@+id/CalendarButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:text="C" />
-
-            <Button
-                android:id="@+id/AddCalendarButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:text="AC" />
-
-            <Button
-                android:id="@+id/ToDoListButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:text="TDL" />
-
-            <Button
-                android:id="@+id/DiaryListButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:text="DL" />
-
-            <Button
-                android:id="@+id/EmotionDiaryButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:text="ED" />
-
-            <Button
-                android:id="@+id/SettingButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:text="S" />
-
-            <Button
-                android:id="@+id/ShareButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:text="share"
-                android:visibility="gone" />
-        </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="95dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="4dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.99">
-
-        <FrameLayout
-            android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <ImageView
-                android:id="@+id/img_post"
+            <FrameLayout
+                android:id="@+id/layoutScroll"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:baselineAligned="false"
+                    android:id="@+id/layoutDate"
+                    android:layout_width="2550dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/svView0"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/tvDate0"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="수 (4/15)"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="15dp"
+                                android:text="2030"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:singleLine="true"
+                                android:textSize="15dp"
+                                android:text="asdfkajlisvjsaldkfjeiwfjqlkdjfsladksdajlfksjadf"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="95dp"
+                            android:layout_height="100dp"
+                            android:layout_marginStart="4dp"
+                            android:orientation="horizontal"
+                            android:layout_gravity="bottom"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.99">
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/img_post"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/post_it" />
+
+                                <TableLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center">
+                                    <TableRow>
+                                        <ImageView
+                                            android:layout_width="20dp"
+                                            android:layout_height="20dp"
+                                            android:layout_margin="2dp"
+                                            android:src="@drawable/pen"/>
+                                        <ImageView
+                                            android:layout_width="20dp"
+                                            android:layout_height="20dp"
+                                            android:layout_margin="2dp"
+                                            android:src="@drawable/exercise"/>
+                                    </TableRow>
+                                    <TableRow>
+                                        <ImageView
+                                            android:layout_width="20dp"
+                                            android:layout_height="20dp"
+                                            android:layout_margin="2dp"
+                                            android:src="@drawable/pen"/>
+                                        <ImageView
+                                            android:layout_width="20dp"
+                                            android:layout_height="20dp"
+                                            android:layout_margin="2dp"
+                                            android:src="@drawable/exercise"/>
+                                    </TableRow>
+                                </TableLayout>
+                            </FrameLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/svView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/tvDate1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="목"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/svView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/tvDate2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="금"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/svView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/tvDate3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="토"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/svView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/tvDate4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="일"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/svView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/tvDate5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="월"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/svView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/tvDate6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="화"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/svView7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/tvDate7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="수"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/svView8"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/tvDate8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="목"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/svView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/tvDate9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="금"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/svView10"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/tvDate10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="토"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/svView11"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/tvDate11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="일"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/svView12"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/tvDate12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="월"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/svView13"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/tvDate13"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="화"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/svView14"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/tvDate14"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="수"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/svView15"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/tvDate15"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="목"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/svView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/tvDate16"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="금"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:id="@+id/layoutMenu"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="10dp"
+            android:layout_gravity="end"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <Button
+                android:id="@+id/MenuButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/post_it" />
+                android:layout_margin="5dp"
+                android:background="@drawable/menu" />
 
-            <TableLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center">
-                <TableRow>
-                    <ImageView
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_margin="2dp"
-                        android:src="@drawable/pen"/>
-                    <ImageView
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_margin="2dp"
-                        android:src="@drawable/exercise"/>
-                </TableRow>
-                <TableRow>
-                    <ImageView
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_margin="2dp"
-                        android:src="@drawable/pen"/>
-                    <ImageView
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_margin="2dp"
-                        android:src="@drawable/exercise"/>
-                </TableRow>
-            </TableLayout>
-        </FrameLayout>
-    </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layoutHideMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#918F8F"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/CalendarButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="C" />
+
+                <Button
+                    android:id="@+id/AddCalendarButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="AC" />
+
+                <Button
+                    android:id="@+id/ToDoListButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="TDL" />
+
+                <Button
+                    android:id="@+id/DiaryListButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="DL" />
+
+                <Button
+                    android:id="@+id/EmotionDiaryButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="ED" />
+
+                <Button
+                    android:id="@+id/SettingButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="S" />
+
+                <Button
+                    android:id="@+id/ShareButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="share"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
